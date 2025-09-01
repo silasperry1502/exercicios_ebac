@@ -6,7 +6,7 @@ Funcionalidade: Cadastro de Cliente
     Para finalizar minha compra
 
     Esquema do Cenário: Validação de campos obrigatórios no cadasdo
-        Dado que estou na tela de cadastro
+        Dado  que estou na tela de cadastro
         Quando eu preencho os campos obrigatórios: <nome>, <email>, <senha>, <endereco>
         E clico em "Cadastrar"
         Entao o sistema deve exibir a seguinte <mensagem>
@@ -19,3 +19,4 @@ Funcionalidade: Cadastro de Cliente
             | Ana Lima     | ana@email       | senha123 |                 | Campo "endereço" é obrigatório |
             |              | lucas@email.com | teste123 | Rua C, 400      | Campo "nome" é obrigatório     |
             | Júlia Torres | julia@email.com | abcd1234 | Rua D, 500      | Cadastro realizado com sucesso |
+

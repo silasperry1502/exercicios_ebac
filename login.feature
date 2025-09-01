@@ -1,19 +1,22 @@
-Feature: Login na Plataforma
+#language: pt
+
+Funcionalidade: Login na Plataforma
 Como cliente da EBAC-SHOP
 Quero fazer concluir meu cadastro
 Para visualizar meus pedidos
 
-Background: 
-Given que estou na tela de login
+Contexto: 
+Dado que estou na tela de login
 
-Scenario: Login com dados validos
-When eu preencho usuario e senha validos
-And clico em "Entrar"
-Then devo ser direcionado para tela de checkout
+Cenário: Login com dados validos
+Quando eu preencho usuario e senha validos
+E clico em "Entrar"
+Entao devo ser direcionado para tela de checkout
 
-Scenario: Login com dados invalidos
-When eu preencho usuario ou senha invalidos
-And clico em "Entrar"
-Then deve ser exibida a mensagem "Usuário ou senha invalidos"
+Cenário: Login com dados invalidos
+Quando eu preencho usuario ou senha invalidos
+E clico em "Entrar"
+Entao deve ser exibida a mensagem "Usuário ou senha invalidos"
+
 
 
